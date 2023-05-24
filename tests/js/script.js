@@ -1,4 +1,8 @@
 var clique = document.getElementById('clique') 
 
 
-addEventListener
+clique.addEventListener('click')
+
+function clique{
+    clique.inne
+}
