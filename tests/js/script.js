@@ -1,8 +1,8 @@
-var clique = document.getElementById('clique') 
+var c = document.getElementById('area');
 
 
-clique.addEventListener('click')
+c.addEventListener('click', clicar)
 
-function clique{
-    clique.inne
+function clicar() {
+    c.innerText - 'Clicou'
 }
