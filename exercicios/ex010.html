@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentran</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>
+        Sistema de multas
+    </h1>
+    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> Kh/h 
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var txtv = document.getElementById('txtvel');
+            var res = document.getElementById('res')
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `sua velociade atual é de <strong>${vel}Km/h </strong>`
+            res.innerHTML += `<p>Dirija sempre com segurança! </p>`
+
+            if(vel > 60){
+                res.innerHTML += `<p> Você esta <strong> MULTADO </strong> por excesso de velocidade! </p>`
+            }else{
+                res.innerHTML += `<p> Parabens voce esta no limite </p>`
+            }
+        }
+    </script>
+</body>
+</html>
