@@ -13,14 +13,15 @@ body{
 }
 
 header{
+    padding: 30px;
     text-align: center;
-    margin: 30px;
+    background-color: #ffffffd1;
+    margin-bottom: 50px;
 }
 
 section{
     border-radius: 10px;
-    width: 250px;
-    height: 80px;
+    width: 300px;
     margin: auto;
     background-color: #FFF;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.354);
@@ -42,5 +43,39 @@ footer{
 }
 
 div{
+    padding: 10px;
+    text-align: center;
 
+}
+
+img{
+    margin-bottom: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#msg{
+    font-weight: bold;
+}
+
+.btn{
+    width: 100px;
+    margin-top:10px ;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: .5px solid rgba(0, 0, 0, 0.383);
+    border-radius: 5px;
+    background-color: rgb(7, 104, 173);
+}
+
+.btn:hover{
+    transition: 1s;
+    background-color: rgb(4, 73, 122);
+    transform: scale(1.05);
+}
+
+.sex{
+    margin-top: 10px;
 }
